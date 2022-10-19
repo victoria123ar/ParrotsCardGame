@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #75B79E;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #EEF9BF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.titulo {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo h1 {
+    font-size: 56px;
+}
+
+.tempo{
+    height: 100px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .relogio{
+    height: 100px;
+    font-size: 25px;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.corpo{
+    display: flex;
+    justify-content: center;
+    width: 1600px;
+    height: 100vmax;
+}
+
+.cartas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1100px;
+}
+.carta{
+    width: 117px;
+    height: 146px;
+    position: relative;
+    transition: all 500ms;
+    transform-style: preserve-3d;
+    margin: 17.5px;
+}
+
+.face{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    border: #99CEA8 solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1000ms;
+}
+
+.frente{
+    background-size: 100px 100px;
+    background-color: #A7E9AF;
+    background-repeat: no-repeat;
+    background-position: center;    
+    transform: rotateY(180deg);
+}
+
+.verso {
+    width: 117px;
+    height: 146px;
+    background-color: #A7E9AF;
+    background-image: url('../assets/back.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    border: #99CEA8 solid 1px;
+    cursor: pointer;
+}
+
+.girar{
+    transform: rotateY(180deg);
+    cursor: pointer;
+  }
+  
+  .desabilitada{
+    filter: saturate(0);
+    opacity: 0.5;
+  }
+  
+  @media (max-width: 614px) {
+    .titulo h1{
+      width: 250px;
+      font-size: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .corpo{
+      display: flex;
+      flex-direction: column;
+      margin-top: 250px;
+    }
+  
+    .cartas{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+  }
