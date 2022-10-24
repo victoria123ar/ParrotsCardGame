@@ -48,13 +48,12 @@ body {
     display: flex;
     justify-content: center;
     width: 1600px;
-    height: 100vmax;
+    height: 300px;
 }
 
 .cartas {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     max-width: 1100px;
 }
 .carta{
@@ -82,7 +81,7 @@ body {
     background-size: 100px 100px;
     background-color: #A7E9AF;
     background-repeat: no-repeat;
-    background-position: center;    
+    background-position: center;  
     transform: rotateY(180deg);
 }
 
@@ -100,7 +99,7 @@ body {
     cursor: pointer;
 }
 
-.girar{
+.virar{
     transform: rotateY(180deg);
     cursor: pointer;
   }
@@ -122,7 +121,7 @@ body {
     .corpo{
       display: flex;
       flex-direction: column;
-      margin-top: 250px;
+      margin-top: 1100px;
     }
   
     .cartas{
